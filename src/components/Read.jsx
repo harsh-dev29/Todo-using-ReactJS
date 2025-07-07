@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Read.css'
+import { toast } from 'react-toastify';
+import { todocontext } from '../Wrapper';
+import { set } from 'react-hook-form';
 
+function Read() {
 
-function Read(props) {
-    const Todos = props.Todos;
-    const setTodos = props.setTodos;
-
+    const [Todos, setTodos] = useContext(todocontext)
     const deleteHandler = (id) => {
         const filteredTodos = Todos.filter((todo) => todo.id != id)
         setTodos(filteredTodos);
+
+        toast.error("Todo Deleted Successfully", {
+            position: "bottom-right"
+        })
 
 
     }
