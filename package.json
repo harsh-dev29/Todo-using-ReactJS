@@ -14,8 +14,11 @@
     "nanoid": "^5.1.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+<<<<<<< HEAD
     "react-hook-form": "^7.60.0",
     "react-toastify": "^11.0.5",
+=======
+>>>>>>> d5f33ae29f71439d016cc1f40968c68e7a7f1272
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
